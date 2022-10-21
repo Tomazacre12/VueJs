@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Vue JS 3</title>
+</head>
+<body>
+    <h1>VueJs Tutorial</h1>
+    <section id="contact">
+      <div class="cart-container">
+        <div class="card" @mouseover="onLogEvent">Mouse Over (Enter)</div>
+        <div class="card" @mouseleave="onLogEvent">Mouse Leave</div>
+        <div class="card" @dblclick="onLogEvent($event, 150, 100)">Double Click</div>
+        <div class="card" @mousemove="onMouseMoveEvent">Mouse Move {{`${x}-${y}`}}</div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
